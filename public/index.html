@@ -34,9 +34,9 @@
                     users = users.map(function(user,index){
                         return (
                             <li key={index}>
-                                <span className={user.obj.available}></span>    
-                                <span className="name">{user.obj.name}</span>
-                                <span className="job">{user.obj.job}</span>
+                                <span className={user.available}></span>    
+                                <span className="name">{user.name}</span>
+                                <span className="job">{user.job}</span>
                                 <span className="dist">{Math.floor(user.dis/1000)} km</span>
                                 </li>
                         )

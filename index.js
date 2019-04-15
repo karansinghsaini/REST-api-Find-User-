@@ -12,6 +12,7 @@ mongoose.Promise = global.Promise;
 //creating middlewares
 //to return images, html etx files.
 app.use(express.static('public'));
+//To take only json input from req.body
 app.use(bodyParser.json());
 //for routes
 app.use('/api',require('./routes/api'));
